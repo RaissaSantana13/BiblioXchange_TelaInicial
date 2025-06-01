@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>A Biblioteca da Meia-Noite</title>
+  <link rel="stylesheet" href="/style_books.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header class="header">
+    <div class="search-bar">
+      <input type="text" placeholder="Busque por livro, autor, gênero..." />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <a href="index.html" class="home-button" title="Voltar para a home">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <div class="user-icon">
+      <i class="fas fa-user-circle" id="profileIcon"></i>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Minha Conta</a>
+        <a href="#">Meus Livros</a>
+        <a href="#">Sair</a>
+      </div>
+    </div>
+
+  </header>
+  
+  <div class="container">
+    <div class="book-cover">
+      <img src="/imgs/a blioteca.jpg" alt="A Biblioteca da Meia-Noite">
+    </div>
+    <div class="book-details">
+      <h1>A Biblioteca da Meia-Noite</h1>
+      <h2><a href="">Matt Haig</a></h2>
+      <div class="tag">#Ficção científica</a></div>
+      <br>
+      <button class="exchange-button">Quero trocar</button>
+      <h2>Descrição: </h2>
+      <p class="description">
+        --
+      </p>
+      <div class="extra-info">
+        <strong>Estado:</strong>Ruim<br>
+        <strong>Ano de pubicação:</strong>--
+      </div>
+    </div>
+  </div>
+  <script src="script_books.js"></script>
+</body>
+</html>

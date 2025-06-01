@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  background: linear-gradient(to bottom, #000000, #d85e8b 80%);
+  color: white;
+  background-attachment: fixed;
+  padding-top: 100px;
+}
+
+/* CABEÇALHO */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  width: 350px;
+  background-color: #d3d3d3;
+  color: #000000;
+}
+
+.search-bar button {
+  background-color: #d85e8b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.home-button {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  color: #f4a6c0;
+}
+.user-icon i {
+  font-size: 1.8rem;
+  color: #ffffff;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  position: absolute;
+  top: 3.5rem;
+  right: 1.5rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: none;
+  flex-direction: column;
+  min-width: 160px;
+  z-index: 2000;
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333333;
+  color: #f4a6c0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #3d1026;
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  gap: 40px;
+}
+
+.book-cover img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.book-details h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.book-details h2 {
+  font-size: 20px;
+  color: #ff9dbb;
+  margin-bottom: 20px;
+}
+
+.book-details h2 a{
+  color: #ff9dbb;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #001840;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.exchange-button {
+  background-color: #f9dd4a;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.exchange-button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Branco com 80% de opacidade */
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(249, 221, 74, 0.3); /* Sombra amarela sutil */
+  transform: translateY(-2px); /* Efeito de levitação */
+}
+
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.extra-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
